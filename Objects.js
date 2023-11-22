@@ -93,3 +93,16 @@ for (var prop in mundo) {
    console.log("Esta es la propiedad " + prop)
    console.log("Este es el valor "+ mundo[prop]);
 }
+
+console.log('--------------');
+// THIS = al usarlo apunta a la propiedad que quieres usar para imprimir
+var mascota = {
+    animal: "Perro", 
+    raza :"Ovejero Aleman", 
+    Amo: "Juan", 
+    amistoso: true,
+    info: function () {
+        console.log("Mi perro es de raza " + this.raza);
+    },
+}
+mascota.info()
