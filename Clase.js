@@ -63,19 +63,3 @@ brasil.obtenerNombre()
 
 console.log('-----------');
 
-
-
-class Persona{
-    constructor(dni,nombre,apellido,ciudad){
-        this.dni = dni;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.ciudad = ciudad;
-    }
-    obtenerNombre (){
-        console.log(this.nombre);
-    }
-}
-
-var personal = new Persona("Daniel")
-personal.obtenerNombre();
